@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 let points = JSON.parse(fs.readFileSync('./fkk/3wasmPTS.json', 'utf8'));
-var prefix = "#";//البريفكس
+var prefix = "-";//البريفكس
 
 client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
